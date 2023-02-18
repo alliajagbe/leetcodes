@@ -1,4 +1,5 @@
 #%%
+# Finding longest common prefix
 
 def longestCommonPrefix(strs) -> str:
     if len(strs) == 0:
