@@ -6,17 +6,15 @@ def longestCommonPrefix(strs) -> str:
     elif len(strs) == 1:
         return strs[0]
     else:
-        shortest_word = min(strs, key=len)
-        print("shortest word",shortest_word)
-        i = 1
-        while i <= len(shortest_word):
-            for element in strs:
-                # temp = shortest_word[:i]
-                if shortest_word[:i] != element[:i]:
-                    return shortest_word[:i]
-            
-            i += 1
+        temp = strs[0]
+        for element in strs[1:]:
+            while len(temp) > 0:
+                if element.startswith(element) == False:
+                    temp = temp[:-1]
+                else: 
+                    break
+        return temp
 
 print(longestCommonPrefix(["ab","a"]))
 
-#%%
+# %%
