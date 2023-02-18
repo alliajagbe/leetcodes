@@ -9,7 +9,7 @@ def longestCommonPrefix(strs) -> str:
         temp = strs[0]
         for element in strs[1:]:
             while len(temp) > 0:
-                if element.startswith(element) == False:
+                if element.startswith(temp) == False:
                     temp = temp[:-1]
                 else: 
                     break
