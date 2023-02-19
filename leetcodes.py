@@ -1,5 +1,5 @@
 #%%
-# Finding longest common prefix
+# Finding Longest Common Prefix from an Array of Strings
 
 def longestCommonPrefix(strs) -> str:
     if len(strs) == 0:
@@ -19,7 +19,7 @@ def longestCommonPrefix(strs) -> str:
 print(longestCommonPrefix(["ab","a"]))
 
 # %%
-
+# Binary Search on Sorted Arrays
 class Solution:
     def search(nums, target: int) -> int:
         high = len(nums) - 1
@@ -32,8 +32,7 @@ class Solution:
                 low = mid + 1
             elif nums[mid] > target:
                 high = mid - 1
-            else:
-                return -1
+        return -1
 
 print(Solution.search([-1,0,3,5,9,12], 9))
 # %%
