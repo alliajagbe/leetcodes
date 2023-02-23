@@ -80,5 +80,5 @@ class Solution:
         for i in range(nums):
             for j in range(i+1, nums):
                 for k in range(j+1, nums):
-                    if (nums[i] + nums[j] + nums[k] == 0) and nums[i] != nums[j] and nums[j]!=nums[k] and nums[i]!=nums[k]:
+                    if (nums[i] + nums[j] + nums[k] == 0):
                         return [nums[i], nums[j], nums[k]]
