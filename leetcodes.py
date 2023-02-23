@@ -78,16 +78,16 @@ print(Solution.longestPalindrome("pneumonoultramicroscopicsilicovolcanoconiosis"
 class Solution:
     def threeSum(nums):
         n = 0
-        answer = []
+        answer = set()
         while n <= len(nums):
             for i in range(len(nums)):
                 for j in range(i+1, len(nums)):
                     for k in range(j+1, len(nums)):
                         if (nums[i] + nums[j] + nums[k] == 0) and i!=j and j!=k and i!=k:
-                            answer.append([nums[i], nums[j], nums[k]])
+                            answer.add([nums[i], nums[j], nums[k]])
             n += 1
         
-        return answer
+        return list(answer)
 
 
 print(Solution.threeSum([-1,0,1,2,-1,-4]))
