@@ -36,3 +36,10 @@ class Solution:
 
 print(Solution.search([-1,0,3,5,9,12], 9))
 # %%
+
+class Solution:
+    def twoSum(self, nums, target: int):
+        for i,j in zip(nums,nums):
+            if sum(i,j) == target:
+                return [nums.index(i),nums.index(j)]
+        
