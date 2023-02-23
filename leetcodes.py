@@ -62,11 +62,15 @@ print(Solution.twoSum([3,3],6))
 
 class Solution:
     def longestPalindrome(s: str) -> str:
-        while len(s)!= 0:
-            if s != s[::-1]:
-                s = s[:-1]
-            else:
-                return s
+        m = '' 
+        for i in range(len(s)):
+            for j in range(len(s), i, -1):
+                if len(m) >= j-i:
+                    break
+                elif s[i:j] == s[i:j][::-1]:
+                    m = s[i:j]
+                    break
+        return m
 
 print(Solution.longestPalindrome("babad"))
 # %%
