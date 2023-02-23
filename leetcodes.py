@@ -86,6 +86,8 @@ class Solution:
                         if (nums[i] + nums[j] + nums[k] == 0):
                             answer.append([nums[i], nums[j], nums[k]])
             n += 1
+        
+        return answer
 
 
 print(Solution.threeSum([-1,0,1,2,-1,-4]))
