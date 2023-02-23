@@ -72,5 +72,5 @@ class Solution:
                     break
         return palindrome
 
-print(Solution.longestPalindrome("babad"))
+print(Solution.longestPalindrome("pneumonoultramicroscopicsilicovolcanoconiosis"))
 # %%
