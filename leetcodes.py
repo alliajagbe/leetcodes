@@ -56,3 +56,16 @@ print(Solution.twoSum([3,3],6))
         
 
 # %%
+# Longest Palindromic Substring
+
+# Given a string s, return the longest palindromic substring in s.
+
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        while len(s)!= 0:
+            if s != s[::-1]:
+                s = s[:-1]
+            else:
+                return s
+
+print(Solution.longestPalindrome("babad"))
