@@ -165,7 +165,7 @@ class Solution:
 
 #%%
 class Solution:
-    def canPlaceFlowers(flowerbed: List[int], n: int) -> bool:
+    def canPlaceFlowers(flowerbed, n: int) -> bool:
         if n == 0:
             return True
         for i in range(len(flowerbed)):
@@ -177,3 +177,7 @@ class Solution:
                 return True
         
         return False
+    
+print(Solution.canPlaceFlowers([1,0,0,0,1],1))
+
+# %%
