@@ -278,7 +278,7 @@ class Solution:
         for i in range(1, len(nums)):
             prefix[i-1] *= nums[i]
 
-        for i in range(len(nums)-1, -1, -1):
+        for i in range(len(nums)-1, 1, -1):
             suffix[i-1] *= nums[i]
 
         new_list = [prefix[i]*suffix[i] for i in range(len(nums))]
