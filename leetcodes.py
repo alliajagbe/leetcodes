@@ -125,3 +125,23 @@ class Solution:
 print(Solution.mergeAlternately("ab", "pqrs"))
 print(Solution.mergeAlternately2("ab", "pqrs"))
 # %%
+class Solution:
+    def gcdOfStrings(str1: str, str2: str) -> str:
+
+        if str1 + str2 != str2 + str1: 
+            answer = ""
+        else:
+            # function to find the greatest common divisor of two numbers
+            def gcd(a,b):
+                while b:
+                    # we keep swapping so that a is always the bigger number
+                    # and b is the smaller one
+                    # we are basically finding the remainder iteratively until the 
+                    # remainder is zero
+                    a,b = b, a%b
+                return a
+            answer = str1[:gcd(len(str1), len(str2))]
+        return answer
+    
+print(Solution.gcdOfStrings("ABCABC", "ABC"))
+# %%
