@@ -76,3 +76,6 @@ the tweet is strictly greater than 15.
 
 Return the result table in any order.
 '''
+sql = """
+        select tweet_id from Tweets where length(content) > 15
+        """
