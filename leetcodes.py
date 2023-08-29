@@ -94,7 +94,7 @@ print(Solution.threeSum([-1,0,1,2,-1,-4]))
 # %%
 
 class Solution:
-    def mergeAlternately(self, word1: str, word2: str) -> str:
+    def mergeAlternately(word1: str, word2: str) -> str:
         new_string = ''
         i = 0
         while i < len(word1) or i < len(word2):
@@ -106,3 +106,6 @@ class Solution:
             i += 1
 
         return new_string
+    
+print(Solution.mergeAlternately("ab", "pqrs"))
+# %%
