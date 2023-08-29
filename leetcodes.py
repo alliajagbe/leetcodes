@@ -244,9 +244,11 @@ class Solution:
         for i in s:
             if i == "":
                 s.remove(i)
+        
+        # reversing the list
+        s = reversed(s)
 
-
-        return ''.join(s[::-1])
+        return ' '.join(s)
     
 print(Solution.reverseWords("the sky is blue"))
 # %%
