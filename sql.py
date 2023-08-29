@@ -5,3 +5,8 @@ where 'Y' means this product is low fat and 'N' means it is not.
 recyclable is an ENUM (category) of types ('Y', 'N') 
 where 'Y' means this product is recyclable and 'N' means it is not.
 '''
+sql = """select product_id 
+        from Products 
+        where low_fats = 'Y' 
+            and recyclable = 'Y'
+        """
