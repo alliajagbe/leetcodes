@@ -19,3 +19,16 @@ Find the names of the customer that are not referred by the customer with id = 2
 
 Return the result table in any order.
 '''
+
+sql = """
+        select name 
+        from Customer 
+        where coalesce(referee_id,0) <> 2;
+        """
+
+sql2 = """
+        select name 
+        from Customer 
+        where (referee_id != 2) 
+            or (referee_id is NULL);
+        """
