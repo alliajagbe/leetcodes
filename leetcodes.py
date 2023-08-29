@@ -272,4 +272,16 @@ You must write an algorithm that runs in O(n) time and without using the divisio
 
 class Solution: 
     def productExceptSelf(nums):
-        pass
+        prefix = [1] * len(nums)
+        suffix = [1] * len(nums)
+
+        for i in range(1, len(nums)):
+            prefix[i] *= nums[i]
+
+        for i in range(len(nums)-1, -1, -1):
+            suffix[i] *= nums[i]
+
+        new_list = [prefix[i]*suffix[i] for i in range(len(nums))]
+        return new_list
+
+ 
