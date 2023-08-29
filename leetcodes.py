@@ -250,5 +250,12 @@ class Solution:
 
         return ' '.join(s)
     
-print(Solution.reverseWords("the sky is blue"))
+    def reverseWords2(s:str):
+        # using list comprehension
+
+        new_list = [char for char in reversed(s.split()) if char]
+
+        return ' '.join(new_list)
+    
+print(Solution.reverseWords2("the sky is blue"))
 # %%
