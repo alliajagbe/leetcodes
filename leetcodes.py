@@ -158,7 +158,7 @@ they will have the greatest number of candies among all the kids, or false other
 Note that multiple kids can have the greatest number of candies.
 '''
 class Solution:
-    def kidsWithCandies(candies, extraCandies: int) -> List[bool]:
+    def kidsWithCandies(candies, extraCandies: int):
         # we define a function to give the maximum number of candies a kid has in the list
         def maximum(candies):
             max_candy = 0
@@ -174,6 +174,8 @@ class Solution:
         # in the list
         boolean_array = [candy + extraCandies >= maximum(candies) for candy in candies]
         return boolean_array
+    
+print(Solution.kidsWithCandies([2,3,5,1,3], 3))
 
 #%%
 
