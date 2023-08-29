@@ -284,4 +284,4 @@ class Solution:
         new_list = [prefix[i]*suffix[i] for i in range(len(nums))]
         return new_list
 
- 
+print(Solution.productExceptSelf([1,2,3,4]))
