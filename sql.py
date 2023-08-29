@@ -1,4 +1,5 @@
 '''
+# Recyclable and Low Fat Products
 product_id is the primary key (column with unique values) for this table.
 low_fats is an ENUM (category) of type ('Y', 'N') 
 where 'Y' means this product is low fat and 'N' means it is not.
@@ -10,3 +11,4 @@ sql = """select product_id
         where low_fats = 'Y' 
             and recyclable = 'Y'
         """
+
