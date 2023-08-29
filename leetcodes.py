@@ -107,5 +107,21 @@ class Solution:
 
         return new_string
     
+    def mergeAlternately2(word1: str, word2: str) -> str:
+        # getting the minimum length of the two strings
+        minimum = min(len(word1), len(word2))
+
+        # new string to be formed
+        new_string = ''
+
+        for i in range(minimum):
+            new_string += word1[i] + word2[i]
+        
+        # adding the rest of the letters 
+        new_string += word1[minimum:] + word2[minimum:]
+
+        return new_string
+    
 print(Solution.mergeAlternately("ab", "pqrs"))
+print(Solution.mergeAlternately2("ab", "pqrs"))
 # %%
