@@ -145,3 +145,20 @@ class Solution:
     
 print(Solution.gcdOfStrings("ABCABC", "ABC"))
 # %%
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        # we define a function to give the maximum number of candies a kid has in the list
+        def maximum(candies):
+            max_candy = 0
+            for i in range(len(candies)):
+                if candies[i] > max_candy:
+                    max_candy = candies[i]
+                else:
+                    continue
+            return max_candy
+        
+        # using list comprehension, we find all the list of all booleans returning true or false
+        # if with the addition of the extra candies, they get more than the maximum number of candies
+        # in the list
+        boolean_array = [candy + extraCandies >= maximum(candies) for candy in candies]
+        return boolean_array
