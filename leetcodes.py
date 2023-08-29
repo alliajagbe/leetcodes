@@ -285,3 +285,4 @@ class Solution:
         return new_list
 
 print(Solution.productExceptSelf([1,2,3,4]))
+# %%
