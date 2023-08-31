@@ -52,6 +52,11 @@ class Solution:
                 else:
                     continue
 
+    def twoSum2(nums, target:int):
+        right, left = 0, len(nums) - 1 
+        
+        pass
+
 print(Solution.twoSum([3,3],6))
         
 
