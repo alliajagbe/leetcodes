@@ -73,6 +73,7 @@ class Solution:
         return palindrome
 
 print(Solution.longestPalindrome("pneumonoultramicroscopicsilicovolcanoconiosis"))
+print(Solution.longestPalindrome("madam"))
 # %%
 
 class Solution:
