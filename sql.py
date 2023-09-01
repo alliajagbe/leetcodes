@@ -101,3 +101,8 @@ and price for each sale_id in the Sales table.
 
 Return the resulting table in any order.
 '''
+sql = '''
+        select p.product_name, s.year, s.price
+        from Sales s inner join Product p
+        where s.product_id = p.product_id
+        '''
