@@ -135,3 +135,9 @@ its previous dates (yesterday).
 
 Return the result table in any order.
 '''
+sql = '''
+        select x.id from Weather x
+        join Weather y
+        on datediff(x.recordDate, y.recordDate) = 1
+        and x.Temperature > y.Temperature
+        '''
