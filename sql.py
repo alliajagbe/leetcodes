@@ -126,3 +126,12 @@ sql = '''
         where t.transaction_id is NULL 
         group by v.customer_id
         '''
+
+#%% 
+'''
+# Rising Temperature
+Find all dates' Id with higher temperatures compared to 
+its previous dates (yesterday).
+
+Return the result table in any order.
+'''
