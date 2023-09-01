@@ -82,6 +82,7 @@ sql = """
 
 #%%
 '''
+# Replace Employee ID with the Unique Identifier
 Write a solution to show the unique ID of each user, 
 If a user does not have a unique ID replace just show null.
 
@@ -96,6 +97,7 @@ sql = '''
 
 #%%
 '''
+# Product Sales Analysis I
 Write a solution to report the product_name, year, 
 and price for each sale_id in the Sales table.
 
@@ -106,3 +108,7 @@ sql = '''
         from Sales s inner join Product p
         where s.product_id = p.product_id
         '''
+
+#%%
+'''
+'''
