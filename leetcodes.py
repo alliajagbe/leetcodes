@@ -99,6 +99,7 @@ class Solution:
 print(Solution.threeSum([-1,0,1,2,-1,-4]))
 # %%
 '''
+# Merge Strings Alternately
 You are given two strings word1 and word2. 
 Merge the strings by adding letters in alternating order, starting with word1. 
 If a string is longer than the other, 
@@ -139,6 +140,7 @@ print(Solution.mergeAlternately("ab", "pqrs"))
 print(Solution.mergeAlternately2("ab", "pqrs"))
 # %%
 '''
+# Greatest Common Divisor of Strings
 For two strings s and t, 
 we say "t divides s" if and only if s = t + ... + t 
 (i.e., t is concatenated with itself one or more times).
@@ -167,6 +169,7 @@ class Solution:
 print(Solution.gcdOfStrings("ABCABC", "ABC"))
 # %%
 '''
+# Kids With the Greatest Number of Candies
 There are n kids with candies. 
 You are given an integer array candies, 
 where each candies[i] represents the number of candies the ith kid has, 
@@ -201,6 +204,7 @@ print(Solution.kidsWithCandies([2,3,5,1,3], 3))
 #%%
 
 '''
+# Can Place Flowers
 You have a long flowerbed in which some of the plots are planted, and some are not. 
 However, flowers cannot be planted in adjacent plots.
 
