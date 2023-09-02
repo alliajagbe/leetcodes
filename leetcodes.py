@@ -293,5 +293,5 @@ class Solution:
             postfix *= nums[i] # we update the postfix value by multiplying it with the current value
         return new_list
 
-print(Solution.productExceptSelf([1,2,3,4]))
+print(Solution.productExceptSelf([2,1,3,4]))
 # %%
