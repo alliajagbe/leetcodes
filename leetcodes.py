@@ -258,6 +258,9 @@ class Solution:
                 right -= 1
 
         return ''.join(s)
+    
+print(Solution.reverseVowels("hello"))
+print(Solution.reverseVowels("leetcode"))
 
 # %%
 '''
