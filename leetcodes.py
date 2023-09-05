@@ -340,3 +340,32 @@ Given an integer array nums, return true if there exists a triple of indices (i,
 such that i < j < k and nums[i] < nums[j] < nums[k]. 
 If no such indices exists, return false.
 '''
+class Solution: 
+    def increasingTriplet(nums):
+
+        # instantiating the first two smallest numbers 
+        smallest = float('inf')
+        second_smallest = float('inf')
+
+        for number in nums:
+
+            # changing the smallest number if 
+            # we find a number smaller than its current value
+            if number <= smallest: 
+                smallest = number
+
+            # changing the second smallest if we find 
+            # a number greater than the smallest value 
+            # but less than the second smallest value
+            elif number <= second_smallest:
+                second_smallest = number
+
+            # if we are able to reach this point, 
+            # we have been able to find three numbers
+            # within our list that form the increasing
+            # triplet subsequence
+            else:
+                return True
+        
+        # we return false if we dont see any subsequence
+        return False
