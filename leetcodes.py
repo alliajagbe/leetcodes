@@ -369,3 +369,7 @@ class Solution:
         
         # we return false if we dont see any subsequence
         return False
+    
+print(Solution.increasingTriplet([2,1,5,0,4,6]))
+print(Solution.increasingTriplet([5,4,3,2,1]))
+# %%
