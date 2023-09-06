@@ -373,3 +373,19 @@ class Solution:
 print(Solution.increasingTriplet([2,1,5,0,4,6]))
 print(Solution.increasingTriplet([5,4,3,2,1]))
 # %%
+# the function below works as intended but doesnt pass the test on leetcode. 
+# need to inspect why
+def compress(chars):
+    new_list = []
+
+    for i in chars:
+        if chars.count(i) == 1:
+            new_list.append(i)
+        elif i not in new_list:
+            new_list.append(i)
+            new_list.append(str(chars.count(i)))
+    
+    return new_list
+
+compress(["a","b","b","b","b","b","b","b","b","b","b","b","b"])
+# %%
