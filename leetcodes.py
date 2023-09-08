@@ -397,3 +397,16 @@ maintaining the relative order of the non-zero elements.
 
 Note that you must do this in-place without making a copy of the array.
 '''
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        start = 0
+
+        for i in range(len(nums)):
+            if nums[start] == 0 and nums[i] != 0:
+                nums[start], nums[i] = nums[i], nums[start]
+                start += 1
+            if nums[start] != 0:
+                start += 1
