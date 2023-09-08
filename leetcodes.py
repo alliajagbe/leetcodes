@@ -398,7 +398,7 @@ maintaining the relative order of the non-zero elements.
 Note that you must do this in-place without making a copy of the array.
 '''
 class Solution:
-    def moveZeroes(nums) -> None:
+    def moveZeroes(nums):
         """
         Do not return anything, modify nums in-place instead.
         """
@@ -410,3 +410,7 @@ class Solution:
                 start += 1
             if nums[start] != 0:
                 start += 1
+        
+        return nums
+
+print(Solution.moveZeroes([0,1,0,3,12]))
