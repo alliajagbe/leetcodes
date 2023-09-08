@@ -426,3 +426,15 @@ original string by deleting some (can be none) of the characters
 without disturbing the relative positions of the remaining characters. 
 (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
 '''
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+
+        a = 0
+        while a < len(t):
+            if s.find(t[a]) == True:
+                a += 1
+
+            if a == len(t):
+                return True
+            else: 
+                return False
