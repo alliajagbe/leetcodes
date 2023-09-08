@@ -15,4 +15,9 @@ Given an array, find all the duplicates in the array.
 For example, input: [1,2,3,1,3,6,5], output: [1,3]
 '''
 def duplicates(x):
-    return [i for i in x if x.count(i) > 1]
+    return list(set([i for i in x if x.count(i) > 1]))
+
+# function test
+duplicates([1,2,3,1,3,6,5])
+
+# %%
