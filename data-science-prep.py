@@ -26,15 +26,29 @@ Given an integer array, return the maximum product of any
 three numbers in the array.
 '''
 def maxProduct(x):
-    # getting the first three maximum positive numbers
-    positives = [i for i in x if i > 0]
-    first_three = sorted(positives)[-3:]
 
-    # if there are negative numbers in the array
-    negatives = [i for i in x if i < 0]
-    first_two = sorted(negatives)[:2]
-    return max(first_three[0]*first_three[1]*first_three[2], first_three[2]*first_two[0]*first_two[1])
+    if len(x) < 3:
+        return None
+    
+    elif len(x) == 3:
+        return x[0] * x[1] * x[2]
+    
+    else:
+        # getting the first three maximum positive numbers
+        positives = [i for i in x if i > 0]
+        first_three = sorted(positives, reverse=True)[:3]
 
-maxProduct([2,6,-35,-40,5,7,8])
+        # if there are negative numbers in the array
+        negatives = [i for i in x if i < 0]
+
+        if len(negatives) == len(x): # all the numbers in the array are negative
+            first_three = sorted(negatives, reverse=True)
+            return first_three[0] * first_three[1] * first_three[2]
+        else:
+            first_two = sorted(negatives)[:2]
+
+        return max(first_three[0]*first_three[1]*first_three[2], first_three[0]*first_two[0]*first_two[1])
+
+maxProduct([-2,-6,1, 2])
 
 # %%
