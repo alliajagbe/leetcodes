@@ -21,3 +21,7 @@ def duplicates(x):
 duplicates([1,2,3,1,3,6,5])
 
 # %%
+'''
+Given an integer array, return the maximum product of any 
+three numbers in the array.
+'''
