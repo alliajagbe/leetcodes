@@ -26,7 +26,6 @@ Given an integer array, return the maximum product of any
 three numbers in the array.
 '''
 def maxProduct(x):
-    maximum = None
     # getting the first three maximum positive numbers
     positives = [i for i in x if i > 0]
     first_three = sorted(positives)[:3]
