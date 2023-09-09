@@ -29,7 +29,11 @@ def maxProduct(x):
     # getting the first three maximum positive numbers
     positives = [i for i in x if i > 0]
     first_three = sorted(positives)[-3:]
-    return first_three[0]*first_three[1]*first_three[2]
+
+    # if there are negative numbers in the array
+    negatives = [i for i in x if i < 0]
+    first_two = sorted(negatives)[:2]
+    return max(first_three[0]*first_three[1]*first_three[2], first_three[0]*first_two[0]*first_two[1])
 
 maxProduct([2,6,3,1,5,7,8])
 
