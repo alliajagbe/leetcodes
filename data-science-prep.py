@@ -59,3 +59,21 @@ For example, given the array A = [0,-1,-5,-2,3,14]
 it should return 17 because of [3,14]. 
 Note that if all the elements are negative it should return zero.
 '''
+def largestSum(x):
+    
+    max_sum = current_sum = 0
+    for i in x: 
+        current_sum += i
+        if current_sum < 0: 
+            current_sum = 0
+        
+        max_sum = max(max_sum, current_sum)
+
+        if max_sum > 0:
+            return max_sum
+        else:
+            return 0
+    
+largestSum([-1,2,-3])
+
+# %%
