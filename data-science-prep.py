@@ -69,10 +69,10 @@ def largestSum(x):
         
         max_sum = max(max_sum, current_sum)
 
-        if max_sum > 0:
-            return max_sum
-        else:
-            return 0
+    if max_sum > 0:
+        return max_sum
+    else:
+        return 0
     
 largestSum([-1,2,-3])
 
