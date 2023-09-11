@@ -52,3 +52,10 @@ def maxProduct(x):
 maxProduct([-2,-6,1,3, 2])
 
 # %%
+'''
+Given an integer array, find the sum of the largest 
+contiguous subarray within the array. 
+For example, given the array A = [0,-1,-5,-2,3,14] 
+it should return 17 because of [3,14]. 
+Note that if all the elements are negative it should return zero.
+'''
