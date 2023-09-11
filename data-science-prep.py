@@ -49,6 +49,6 @@ def maxProduct(x):
 
         return max(first_three[0]*first_three[1]*first_three[2], first_three[0]*first_two[0]*first_two[1])
 
-maxProduct([-2,-6,1, 2])
+maxProduct([-2,-6,1,3, 2])
 
 # %%
