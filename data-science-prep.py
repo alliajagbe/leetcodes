@@ -74,6 +74,6 @@ def largestSum(x):
     else:
         return 0
     
-largestSum([-1,2,-3])
+largestSum([-1,4,-2,6,-6,2,-3])
 
 # %%
