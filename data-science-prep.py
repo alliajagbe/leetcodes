@@ -98,3 +98,8 @@ def combinations(n, k):
 combinations(3, 2)
 
 # %%
+'''
+Write a function to generate N samples 
+from a normal distribution and plot them on 
+the histogram
+'''
