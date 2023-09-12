@@ -83,3 +83,18 @@ output a list of all of the combinations
 of k numbers chosen from 1 to n. 
 For example, if n=3 and k=2, return [1,2],[1,3],[2,3]
 '''
+def combinations(n, k):
+    from itertools import combinations
+    final_list = []
+
+    # creating a list of all the possible combinations of k numbers from 1 to n
+    comb = combinations([i for i in range(1, n+1)], k)
+
+    for i in comb: 
+        final_list.append(i)
+
+    return final_list
+
+combinations(3, 2)
+
+# %%
