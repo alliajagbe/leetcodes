@@ -77,3 +77,9 @@ def largestSum(x):
 largestSum([-1,4,-2,6,-6,2,-3])
 
 # %%
+'''
+Given an integer n and an integer K, 
+output a list of all of the combinations 
+of k numbers chosen from 1 to n. 
+For example, if n=3 and k=2, return [1,2],[1,3],[2,3]
+'''
