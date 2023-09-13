@@ -103,3 +103,16 @@ Write a function to generate N samples
 from a normal distribution and plot them on 
 the histogram
 '''
+def normalDistribution(n):
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    numbers = np.random.randint(n)
+
+    # plotting a histogram
+    plt.hist(numbers, bins=20)
+    plt.ylabel("Frequency")
+    plt.xlabel("Numbers")
+    plt.show()
+
+normalDistribution(1000)
