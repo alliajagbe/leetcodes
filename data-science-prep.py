@@ -107,7 +107,7 @@ def normalDistribution(n):
     import matplotlib.pyplot as plt
     import numpy as np
 
-    numbers = np.random.randint(n)
+    numbers = np.random.randn(n)
 
     # plotting a histogram
     plt.hist(numbers, bins=20)
@@ -116,3 +116,5 @@ def normalDistribution(n):
     plt.show()
 
 normalDistribution(1000)
+
+# %%
