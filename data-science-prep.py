@@ -112,8 +112,6 @@ def normalDistribution(n):
 
     # plotting a histogram
     plt.hist(numbers, bins=100)
-    # adding the kde line
-    pd.Series(numbers).plot(kind='kde')
     plt.ylabel("Frequency")
     plt.xlabel("Numbers")
     plt.show()
